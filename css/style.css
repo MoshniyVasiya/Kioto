@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900&subset=cyrillic');
+
+body{   
+    font-family: Montserrat;
+    font-size: 16px;
+    background-color:#0f0f0f;
+    color:#e6e6e6;
+   
+    
+}
+
+a{  
+    color: #e6e6e6;
+    text-decoration: none;
+}
+a:hover{   
+    
+    opacity: 0.7;
+    
+
+}
+
+ul{ 
+    list-style: none;
+    margin: 0;  
+    padding: 0;
+}
+
+.container{ 
+    max-width: 1170px;  
+    margin: 0 auto;
+}
+
+/* Function classes */
+
+.float-l{   
+    float: left;
+}
+
+.pos-a{ 
+    position: absolute;
+}
+.z{ 
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+}
+
+
+/* HEADER */
+
+
+header .container{  
+    height: 90px;
+}
+
+.header-logo{  
+    width: 207px;
+    margin: 13.5px auto;
+}
+
+.header-menu{   
+    width: 592px;
+    text-align: center;
+    font-size: 15px;
+    
+}
+.header-menu ul li{   
+    display: inline; 
+    line-height: 90px;
+    text-align: center;
+    max-width: 118px;
+    margin: 0;
+    padding: 0 18px;
+}
+.header-social{ 
+    width: 184px;
+    line-height: 90px;
+    
+}
+.header-social a:first-child{  
+    padding-right: 15px;
+    
+}
+.header-social a:nth-child(2n){  
+    padding: 0 15px;
+    border-left: 1px solid #3a3a3a;
+    
+}
+.header-social a:nth-child(3){  
+    padding: 0 15px;
+    border-left: 1px solid #3a3a3a;
+    
+}
+
+.header-contact{    
+    width: 187px;
+    height: 65px;
+    text-align: right;
+    padding-top: 25px;
+}
+.header-contact-tel{    
+    font-size: 22px;
+    font-weight: bold
+
+}
+.header-contact-worktime{   
+    font-size: 13px;
+    font-weight: medium;
+}
+
+/* SLIDE */
+
+.slide{ 
+    height: 608px;
+    background: url(../img/background.png) no-repeat center center;
+    position: relative;
+
+}
+
+.circle{    
+    height: 427px;
+    width: 427px;
+    border-radius: 50%;
+    background-color: #f32121;
+    box-shadow: 2px 3.464px 55px 0px rgba(243, 33, 33, 0.64);
+    position: absolute;
+    left:50%;
+    margin-left:-214px;
+    top:50%;
+    margin-top:-214px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.circle-text{   
+    margin-top: 120px;
+} 
+    
+.circle-text-1{ 
+    font-size: 36px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.circle-text-2{ 
+    font-size: 46px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+
+.fly-sushi{ 
+    margin-top: -260px;
+    margin-left: -840px;
+    
+}
+.listik2{   
+    margin-left: -400px;
+    top: 81px;
+}
+.semki{ 
+    margin-left: 15px;
+    top: 72px;
+}
+.listik{  
+    margin-left: -60px;
+    top: 555px;  
+   
+}
+.palochki{  
+    margin-left: 130px;
+    top: 82px;
+}
+.sush{  
+    margin-top: -240px;
+    margin-left: 510px;
+}
+
+/* MAIN */
+
+main .container{ 
+    text-align: center;
+}
+.main-products-title{    
+    font-weight: 300;
+    font-size: 42px;
+}
+.main-products-subtitle{    
+    font-weight: 600;
+    font-size: 18px;
+}
+.main-products-list{    
+    height: 750px;
+}
+.main-products-box{ 
+    position: relative;
+    border: 1px solid #323232;
+    width: 234px;
+    height: 359px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: table-cell;
+}
+.main-products-box-image{ 
+    margin-top: 100px;     
+    width: 235px;
+    height: 165px;
+    
+}
+.main-products-box-name{    
+    font-weight: 300;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.main-products-box-button{  
+    font-weight: 500;
+    font-size: 15px;
+    position: absolute;
+    left: 20px;
+    bottom: -27px;
+    border-radius: 50px;
+    background-color: rgb(243, 33, 33);
+    box-shadow: 2px 3.464px 24px 0px rgba(243, 33, 33, 0.64);
+    height: 55px;
+    width: 180px;
+    z-index: 10;
+    line-height: 55px;
+    padding-right: 20px;
+}
+.main-products-box-button:after{    
+    content: '';
+    background: url(../img/arrow.png) no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    width: 20px;
+    height: 15px;
+    right: 30px;
+    bottom: 20px;
+    
+    
+    
+}
+
+
+
+/* FOOTER */
+
+footer { 
+    height: 191px;
+    background-color: #282828;
+    
+}
+
+.footer-logo{   
+    width: 207px;
+    padding: 50px 0 0;
+    margin-right: 0;
+    
+}
+.footer-info{   
+    width: 245px;
+    height: 80px;
+    font-size: 15px;
+    font-weight:500;
+    margin-left: 260px;
+    text-align: center;
+    padding: 50px 0 0;
+}
+.footer-info-time{  
+    padding: 10px;
+}
+
+.footer-info-social{    
+    
+    margin: 15px 0 0 15px;
+}
+
+.footer-info-social a:first-child{  
+    padding-right: 15px;
+    
+}
+.footer-info-social a:nth-child(2n){  
+    padding: 0 17px;
+    border-left: 1px solid #3a3a3a;
+    
+}
+.footer-info-social a:nth-child(3){  
+    padding: 0 17px;
+    border-left: 1px solid #3a3a3a;
+    
+}
+
+.footer-phone{  
+    padding-top: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    float: right;
+    width: 165px;
+}
+
+/* NEWS */
+
+.main-news a{  
+    display: block;
+}
+
+.main-news{ 
+    margin-top: 155px;
+    height: 865px;
+}
+
+.main-news-title{   
+    font-size: 42px;
+    font-weight: 300;
+}
+.main-news-list{    
+    text-align: left;
+}
+
+.main-news-list li:first-child{ 
+    width: 570px;
+    margin-right: 15px;
+    float: left;
+    
+}
+.main-news-list li:nth-child(2n){ 
+    width: 548px;
+    margin-left: 15px;
+    float: left;
+    margin-bottom: 25px;
+}
+.main-news-list li:last-child{  
+    width: 548px;
+    float: left;
+    margin-left: 15px;
+}
+.main-news-subtitle{    
+    font-size: 18px;
+    font-weight: 600;
+    
+    
+}
+.main-news-image{   
+    padding-right: 30px;
+}
+.main-news-calendar{ 
+    margin: 9px 0 ;   
+    
+}
+.main-news-date{   
+    margin: 12px 0 10px 20px; 
+    font-size:  13px;
+    
+    
+}
+.main-news-text{  
+    margin-top: 10px; 
+    font-size: 13px;
+    font-weight: 400; 
+    margin-bottom: 10px;
+    
+}
+.main-news-list li{    
+    position: relative;
+}
+.main-news-button{  
+    font-weight: 400;
+    font-size: 13px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50px;
+    background-color: rgb(243, 33, 33);
+    box-shadow: 2px 3.464px 24px 0px rgba(243, 33, 33, 0.64);
+    height: 43px;
+    width: 150px;
+    z-index: 10;
+    line-height: 43px;
+    margin-top: 12px;
+    
+}
+.float-r{   
+    margin-left: 300px;
+    margin-top: 35px;
+    
+}
+
+  

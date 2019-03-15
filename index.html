@@ -8,15 +8,16 @@
 
     <meta name="description" content="Kioto official">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 
 <header>
     <div class="container"> 
-        <div class="header-logo"></div>
-        <nav class="header-menu">
+        <div class="header-logo float-l"><a href="#"><img src="img/logo.png"></a></div>
+        <nav class="header-menu float-l">
             <ul class="header-menu-list">    
                 <li class="active"><a href="#">Головна</a></li>
                 <li><a href="#">Меню</a></li>
@@ -25,62 +26,129 @@
                 <li><a href="#">Новини</a></li>
             </ul>
         </nav>
-        <div class="header-contact-social">
-            <div class="header-contact-social-vk"><a href="#">vk<img src=""></a></div>
-            <div class="header-contact-social-fb"><a href="#">facebook<img src=""></a></div>
-            <div class="header-contact-social-ins"><a href="#">instagram<img src=""></a></div>
-            <div class="header-contact-social-map"><a href="#">map<img src=""></a></div>
+        <div class="header-social float-l">
+            <a href="#"><img src="img/vk.png"></a>
+            <a href="#"><img src="img/facebook.png"></a>
+            <a href="#"><img src="img/instagram.png"></a>
+            <a href="#"><img src="img/map.png"></a>
         </div>
-        <div class="header-contact-tel">    
-            <a href="tel:+380970000000"><b>(097) 000-00-00</b></a>
+        <div class="header-contact float-l">
+            <div class="header-contact-tel">    
+                <a href="tel:+380970000000">(097) 000-00-00</a>
+            </div>
+            <div class="header-contact-worktime">Працюємо з 11:00 до 23:00
         </div>
-        <div class="header-contact-worktime">Працюємо з 11:00 до 23:00
-        </div>
-
+    </div>
     </div>    
 </header>
 
+<div class="slide">
+    <div class="container">
+        <div class="circle">
+            <div class="circle-text">
+                <div class="circle-text-1">їжа їжа їжа</div>
+                <div class="circle-text-2">друга страва в подарунок</div>
+            </div>
+        </div>  
+       
+            <img class="fly-sushi pos-a z" src="img/fly-sushi.png">
+            <img class="listik2 pos-a z" src="img/listik2.png">
+            <img class="semki pos-a z" src="img/semki.png">
+            <img class="listik pos-a z" src="img/listik.png">
+            <img class="palochki pos-a z" src="img/palochki.png">
+            <img class="sush pos-a z" src="img/sush.png">
+    </div>
+</div>  
+
 <main>
     <div class="container">
-        <div class="main-banner"></div>
+        
         <section class="main-products">
             <h2 class="main-products-title">Онлайн Замовлення</h2>
-            <h4 class="main-products-title-descr">Просто бери з собою 2 страви, коли забираєшь сам!<br>Дуже крута акція.</h4>
-            <div class="main-products-box">Сети<img src=""><a class="main-products-box-button" href="#">Переглянути &rarr;</a></div>
-            <div class="main-products-box">Роли<img src=""><a class="main-products-box-button" href="#">Переглянути &rarr;</a></div>
-            <div class="main-products-box">Супи<img src=""><a class="main-products-box-button" href="#">Переглянути &rarr;</a></div>
-            <div class="main-products-box">Удони<img src=""><a class="main-products-box-button" href="#">Переглянути &rarr;</a></div>
-            <div class="main-products-box">Удони<img src=""><a class="main-products-box-button" href="#">Переглянути &rarr;</a></div>
-            <div class="main-products-box">Салати<img src=""><a class="main-products-box-button" href="#">Переглянути &rarr;</a></div>
-            <div class="main-products-box">Гарячі страви<img src=""><a class="main-products-box-button" href="#">Переглянути &rarr;</a></div>
-            <div class="main-products-box">Інші страви<img src=""><a class="main-products-box-button" href="#">Переглянути &rarr;</a></div>
-            <div class="main-products-box">Десерти<img src=""><a class="main-products-box-button" href="#">Переглянути &rarr;</a></div>
-            <div class="main-products-box">Удони<img src=""><a class="main-products-box-button" href="#">Переглянути &rarr;</a></div>
+            <h4 class="main-products-subtitle">Просто бери з собою 2 страви, коли забираєшь сам!<br>Дуже крута акція.</h4>
+            <section class="main-products-list">
+                <article class="main-products-box float-l">
+                    <div class="main-products-box-image"><a href="#"><img src="img/main-img1.png"></a></div>
+                    <div class="main-products-box-name"><a href="#">Сети</a></div>
+                    <a class="main-products-box-button" href="#">Переглянути</a>
+                </article><!--Каждый элемент кликабелен и обёрнут в "а" стрелка делается картинкой в устанавливается в ксс after (backgtoundsize: contain)-->
+                
+                <article class="main-products-box float-l">
+                    <div class="main-products-box-image"><a href="#"><img src="img/main-img2.png"></a></div>
+                    <div class="main-products-box-name"><a href="#">Роли</a></div>
+                    <a class="main-products-box-button" href="#">Переглянути</a>
+                </article>
+
+                <article class="main-products-box float-l">
+                    <div class="main-products-box-image"><a href="#"><img src="img/main-img3.png"></a></div>
+                    <div class="main-products-box-name"><a href="#">Супи</a></div>
+                    <a class="main-products-box-button" href="#">Переглянути</a>
+                </article>
+                <article class="main-products-box float-l">
+                    <div class="main-products-box-image"><a href="#"><img src="img/main-img-udonu.png"></a></div>
+                    <div class="main-products-box-name"><a href="#">Удони</a></div>
+                    <a class="main-products-box-button" href="#">Переглянути</a>
+                </article>
+                <article class="main-products-box float-l">
+                        <div class="main-products-box-image"><a href="#"><img src="img/main-img-udonu.png"></a></div>
+                        <div class="main-products-box-name"><a href="#">Удони</a></div>
+                        <a class="main-products-box-button" href="#">Переглянути</a>
+                </article>
+                <article class="main-products-box float-l">
+                        <div class="main-products-box-image"><a href="#"><img src="img/main-img-4.png"></a></div>
+                        <div class="main-products-box-name"><a href="#">Садати</a></div>
+                        <a class="main-products-box-button" href="#">Переглянути</a>
+                </article>
+                <article class="main-products-box float-l">
+                        <div class="main-products-box-image"><a href="#"><img src="img/main-img-5.png"></a></div>
+                        <div class="main-products-box-name"><a href="#">Гарячі страви</a></div>
+                        <a class="main-products-box-button" href="#">Переглянути</a>
+                </article>
+                <article class="main-products-box float-l">
+                        <div class="main-products-box-image"><a href="#"><img src="img/main-img-6.png"></a></div>
+                        <div class="main-products-box-name"><a href="#">Інші страви</a></div>
+                        <a class="main-products-box-button" href="#">Переглянути</a>
+                </article>
+                <article class="main-products-box float-l">
+                        <div class="main-products-box-image"><a href="#"><img src="img/main-img7.png"></a></div>
+                        <div class="main-products-box-name"><a href="#">Десерти</a></div>
+                        <a class="main-products-box-button" href="#">Переглянути</a>
+                </article>
+                <article class="main-products-box float-l">
+                        <div class="main-products-box-image"><a href="#"><img src="img/main-img-udonu.png"></a></div>
+                        <div class="main-products-box-name"><a href="#">Удони</a></div>
+                        <a class="main-products-box-button" href="#">Переглянути</a>
+                </article>
+            </section>
         </section>
+
         <section class="main-news">
             <h2 class="main-news-title">Новини</h2>
             
             <ul class="main-news-list">
                 <li>    
-                    <div class="main-news-image"><img src=""></div>
+                    <div class="main-news-image float-l"><a href="#"><img src="img/news1.png"></a></div><!--a нужно задать display:block-->
+                    <div class="main-news-subtitle "><a href="#">Наша спецпропозиція: Villa Krim в подарунок</a></div>
+                    <div class="main-news-calendar float-l"><img src="img/calendar.png"></div>
                     <div class="main-news-date">12.12.2018</div>
-                    <div class="main-news-title">Наша спецпропозиція: Villa Krim в подарунок</div>
                     <div class="main-news-text">Суші-бар «Kioto Rich» - успішний проект 2009 року, зустрічає гостей стравами японської, європейської, авторської кухнями. Невимушена, легка атмосфера, позитивна енергетика, підтримується оригінальним дизайном «industrial», панорамними вікнами, які відкривають динамічний пейзаж центру міста, традиційними японськими ритмами і lounge музикою.</div>
-                    <a class="main-news-button">Детальніше</a>
+                    <a href="#" class="main-news-button">Детальніше</a>
                 </li>
                 <li>    
-                    <div class="main-news-image"><img src=""></div>
-                    <div class="main-news-title">Нове меню.<br>Вже скоро!</div>
+                    <div class="main-news-image float-l"><a href="#"><img src="img/news2.png"></a></div>
+                    <div class="main-news-subtitle"><a href="#">Нове меню.<br>Вже скоро!</a></div>
+                    <div class="main-news-calendar float-l"><img src="img/calendar.png"></div>
                     <div class="main-news-date">12.12.2018</div>
                     <div class="main-news-text">Свята, що наближаються надихають нас на нові прагнення і відкриття.І вже зовсім скоро ми презентуємо для наших гостей нове меню ресторану «KiotoRich».</div>
-                    <a class="main-news-button">Детальніше</a>
+                    <a href="#" class="main-news-button float-r">Детальніше</a>
                 </li>
                 <li>    
-                    <div class="main-news-image"><img src=""></div>
-                    <div class="main-news-title">Уявляєте, ми разом<br>вже 8 років.</div>
+                    <div class="main-news-image float-l"><a href="#"><img src="img/news3.png"></a></div>
+                    <div class="main-news-subtitle"><a href="#">Уявляєте, ми разом<br>вже 8 років.</a></div>
+                    <div class="main-news-calendar float-l"><img src="img/calendar.png"></div>
                     <div class="main-news-date">12.12.2018</div>
                     <div class="main-news-text">За 8 років роботи нашого ресторану ви багаторазово показали нам своє добре ставлення. Ми вдячні вам за вашу довіру! </div>
-                    <a class="main-news-button">Детальніше</a>
+                    <a href="#" class="main-news-button float-r">Детальніше</a>
                 </li>
             </ul>
         </section>
@@ -90,18 +158,18 @@
 
 <footer>
     <div class="container">
-        <div class="footer-logo"><img src=""></div>
-        <section class="footer-info">
+        <div class="footer-logo float-l"><a href="#"><img src="img/logo.png"></a></div>
+        <section class="footer-info float-l">
             <address class="footer-info-address">м.Полтава, вул.Європейська 8</address>
             <div class="footer-info-time">Працюэмо з 11:00 до 23:00</div>
             <section class="footer-info-social">
-                <div class="footer-info-social-vk"><a href="#">vk<img src=""></a></div>
-                <div class="footer-info-social-fb"></div><a href="#">facebook<img src=""></a></div>
-                <div class="footer-info-social-ins"></div><a href="#">instagram<img src=""></a></div>
-                <div class="footer-info-social-map"></div><a href="#">map<img src=""></a></div>
+                <a href="#"><img src="img/vk.png"></a>
+                <a href="#"><img src="img/facebook.png"></a>
+                <a href="#"><img src="img/instagram.png"></a>
+                <a href="#"><img src="img/map.png"></a>
             </section>
         </section>
-        <section class="footer-contact">
+        <section class="footer-phone ">
             <a href="tel:+380097558383">097 755 83 83</a>
             <a href="tel:+380667735808">066-773-58 08</a>
         </section>
