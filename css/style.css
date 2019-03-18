@@ -45,18 +45,22 @@ ul{
     left: 50%;
     top: 50%;
 }
+.br{ 
+    border-right: transparent !Important;
+}
+.bb{    
+    border-bottom: transparent !Important;
+}
 
 
 /* HEADER */
 
 
-header .container{  
-    height: 90px;
-}
+
 
 .header-logo{  
     width: 207px;
-    margin: 13.5px auto;
+    margin: 15px auto;
 }
 
 .header-menu{   
@@ -75,12 +79,16 @@ header .container{
 }
 .header-social{ 
     width: 184px;
-    line-height: 90px;
     
+    padding-top: 34px;
+    
+}
+.header-social a img{   
+    vertical-align: middle;
 }
 .header-social a:first-child{  
     padding-right: 15px;
-    
+   
 }
 .header-social a:nth-child(2n){  
     padding: 0 15px;
@@ -97,7 +105,7 @@ header .container{
     width: 187px;
     height: 65px;
     text-align: right;
-    padding-top: 25px;
+    padding-top: 23px;
 }
 .header-contact-tel{    
     font-size: 22px;
@@ -115,7 +123,7 @@ header .container{
     height: 608px;
     background: url(../img/background.png) no-repeat center center;
     position: relative;
-
+    overflow: hidden;
 }
 
 .circle{    
@@ -130,7 +138,6 @@ header .container{
     top:50%;
     margin-top:-214px;
     text-align: center;
-    overflow: hidden;
     z-index: 1;
     
 }
@@ -179,19 +186,27 @@ header .container{
 
 /* MAIN */
 
+main{   
+    background: url(../img/tlbg.png) top left no-repeat,url(../img/trbg.png) top right no-repeat,url(../img/brbg.png) bottom right no-repeat,url(../img/blbg.png) bottom left no-repeat;
+}
 main .container{ 
     text-align: center;
 }
-.main-products-title{    
+.main-products-title{
+    margin-top: 0;
+    padding-top: 100px;    
     font-weight: 300;
     font-size: 42px;
 }
 .main-products-subtitle{    
     font-weight: 600;
     font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 35px;
 }
 .main-products-list{    
     height: 750px;
+    background: #0f0f0f;
 }
 .main-products-box{ 
     position: relative;
@@ -247,33 +262,36 @@ main .container{
 /* FOOTER */
 
 footer { 
-    height: 191px;
+    padding-top: 50px;
     background-color: #282828;
-    
+    padding-bottom: 50px;
 }
 
 .footer-logo{   
     width: 207px;
-    padding: 50px 0 0;
     margin-right: 0;
     
 }
 .footer-info{   
     width: 245px;
-    height: 80px;
     font-size: 15px;
     font-weight:500;
     margin-left: 260px;
     text-align: center;
-    padding: 50px 0 0;
+    
+}
+address{    
+    font-style: inherit;
 }
 .footer-info-time{  
     padding: 10px;
 }
 
 .footer-info-social{    
-    
     margin: 15px 0 0 15px;
+}
+.footer-info-social a img{  
+    vertical-align: middle;
 }
 
 .footer-info-social a:first-child{  
@@ -292,7 +310,7 @@ footer {
 }
 
 .footer-phone{  
-    padding-top: 50px;
+    
     font-size: 22px;
     font-weight: 500;
     float: right;
@@ -306,68 +324,62 @@ footer {
 }
 
 .main-news{ 
-    margin-top: 155px;
+    margin-top: 110px;
     height: 865px;
 }
 
 .main-news-title{   
     font-size: 42px;
     font-weight: 300;
+    margin-bottom: 80px;
+  
 }
 .main-news-list{    
     text-align: left;
+    height: 480px;
 }
 
 .main-news-list li:first-child{ 
     width: 570px;
-    margin-right: 15px;
     float: left;
-    
+    margin-right: 31px;
 }
 .main-news-list li:nth-child(2n){ 
     width: 548px;
-    margin-left: 15px;
     float: left;
     margin-bottom: 25px;
 }
 .main-news-list li:last-child{  
     width: 548px;
     float: left;
-    margin-left: 15px;
+}
+.main-news-image{   
+    margin-right: 31px
 }
 .main-news-subtitle{    
     font-size: 18px;
     font-weight: 600;
-    
-    
 }
-.main-news-image{   
-    padding-right: 30px;
+a{ 
+    margin-top: 18px;
 }
-.main-news-calendar{ 
-    margin: 9px 0 ;   
-    
-}
-.main-news-date{   
-    margin: 12px 0 10px 20px; 
+.main-news-date {   
+    margin: 12px 0 12px 0; 
     font-size:  13px;
-    
-    
 }
-.main-news-text{  
-    margin-top: 10px; 
+.main-news-date img{    
+    padding-right: 6px;
+    vertical-align: top;
+}
+.main-news-text{   
     font-size: 13px;
     font-weight: 400; 
-    margin-bottom: 10px;
-    
+    margin-bottom: 33px;
 }
-.main-news-list li{    
-    position: relative;
-}
+
 .main-news-button{  
     font-weight: 400;
     font-size: 13px;
-    position: absolute;
     text-align: center;
     border-radius: 50px;
     background-color: rgb(243, 33, 33);
@@ -376,13 +388,9 @@ footer {
     width: 150px;
     z-index: 10;
     line-height: 43px;
-    margin-top: 12px;
-    
+    margin-top: 10px;
+
 }
-.float-r{   
-    margin-left: 300px;
-    margin-top: 35px;
-    
-}
+
 
   
