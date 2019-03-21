@@ -8,6 +8,9 @@ body{
    
     
 }
+img{    
+    max-width: 100%;
+}
 
 a{  
     color: #e6e6e6;
@@ -58,30 +61,31 @@ ul{
 
 
 
-.header-logo{  
-    width: 207px;
+.header-logo{   
     margin: 15px auto;
 }
 
 .header-menu{   
-    width: 592px;
+    margin: 0 45px;
     text-align: center;
     font-size: 15px;
+    padding-top: 34px;
     
 }
 .header-menu ul li{   
     display: inline; 
-    line-height: 90px;
     text-align: center;
-    max-width: 118px;
     margin: 0;
     padding: 0 18px;
 }
 .header-social{ 
-    width: 184px;
-    
+    margin: 0 25px 0 0;
     padding-top: 34px;
     
+}
+.header-contact{    
+    text-align: right;
+    padding-top: 24px;
 }
 .header-social a img{   
     vertical-align: middle;
@@ -101,12 +105,7 @@ ul{
     
 }
 
-.header-contact{    
-    width: 187px;
-    height: 65px;
-    text-align: right;
-    padding-top: 23px;
-}
+
 .header-contact-tel{    
     font-size: 22px;
     font-weight: bold
@@ -211,7 +210,7 @@ main .container{
 .main-products-box{ 
     position: relative;
     border: 1px solid #323232;
-    width: 234px;
+    width: 20%;
     height: 359px;
     box-sizing: border-box;
     vertical-align: middle;
@@ -219,7 +218,6 @@ main .container{
 }
 .main-products-box-image{ 
     margin-top: 100px;     
-    width: 235px;
     height: 165px;
     
 }
@@ -232,13 +230,14 @@ main .container{
     font-weight: 500;
     font-size: 15px;
     position: absolute;
-    left: 20px;
+    left: 10%;
     bottom: -27px;
     border-radius: 50px;
     background-color: rgb(243, 33, 33);
     box-shadow: 2px 3.464px 24px 0px rgba(243, 33, 33, 0.64);
     height: 55px;
-    width: 180px;
+    width: 100%;
+    max-width: 180px;
     z-index: 10;
     line-height: 55px;
     padding-right: 20px;
@@ -268,15 +267,14 @@ footer {
 }
 
 .footer-logo{   
-    width: 207px;
+    width: 25%;
     margin-right: 0;
     
 }
 .footer-info{   
-    width: 245px;
+    width: 50%;
     font-size: 15px;
     font-weight:500;
-    margin-left: 260px;
     text-align: center;
     
 }
@@ -314,7 +312,8 @@ address{
     font-size: 22px;
     font-weight: 500;
     float: right;
-    width: 165px;
+    width: 25%;
+    text-align: right;
 }
 
 /* NEWS */
@@ -325,7 +324,7 @@ address{
 
 .main-news{ 
     margin-top: 110px;
-    height: 865px;
+    padding-bottom: 250px;
 }
 
 .main-news-title{   
@@ -340,27 +339,27 @@ address{
 }
 
 .main-news-list li:first-child{ 
-    width: 570px;
+    width: 50%;
     float: left;
-    margin-right: 31px;
 }
 .main-news-list li:nth-child(2n){ 
-    width: 548px;
+    width: 50%;
     float: left;
     margin-bottom: 25px;
 }
 .main-news-list li:last-child{  
-    width: 548px;
+    width: 50%;
     float: left;
 }
 .main-news-image{   
-    margin-right: 31px
+    margin-right: 21px;
 }
+
 .main-news-subtitle{    
     font-size: 18px;
     font-weight: 600;
 }
-a{ 
+.a{ 
     margin-top: 18px;
 }
 .main-news-date {   
@@ -394,3 +393,113 @@ a{
 
 
   
+@media screen and (max-width: 1180px){   
+    
+    .header-menu{   
+        font-size: 14px;
+    }
+    .header-social a:first-child{  
+        padding-right: 10px;
+    }
+    .header-social a:nth-child(2n){  
+        padding: 0 10px;
+    }
+    .header-social a:nth-child(3){  
+        padding: 0 10px;
+    }  
+    
+    .main-products-box{ 
+        width: 25%;
+    }    
+}
+@media screen and (max-width: 1130px){   
+    .header-menu{   
+        font-size: 13px; 
+        margin: 0 25px;       
+    }   
+    .header-menu ul li{   
+        padding: 0 10px 0 18px;
+    }
+    
+}
+@media screen and (max-width: 1030px){   
+    .header-menu{   
+        margin: 0;      
+    }
+    .header-menu ul li{   
+        padding: 0 10px 0 18px;
+    }
+    .header-social{ 
+        margin: 0 5px 0 0;        
+    }
+    .header-social a:nth-child(2n){  
+        padding: 0 5px 0 8px;
+    }
+    .header-social a:nth-child(3){  
+        padding: 0 5px 0 8px;
+    }  
+    
+    .main-products-box{ 
+        width: 33%;
+    }
+    .main-news-list li:first-child{ 
+        width: 100%;
+        float: none;
+    }
+    .main-news-list li:nth-child(2n){ 
+        width: 100%;
+        float: left;
+        margin-top: 25px;
+    }
+    .main-news-list li:last-child{  
+        width: 100%;
+        float: none;
+    }
+    .main-news{ 
+        padding-bottom: 0;
+    }
+}
+
+
+@media screen and (max-width: 936px){   
+    .header-menu ul li{   
+        padding: 0 5px 0 0;
+    }
+    
+}
+@media screen and (max-width: 810px){   
+    .main-news{ 
+        margin-top: 110px;
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 825px){   
+    .main-products-box{ 
+        width: 50%;
+    }
+    .main-products-box-button{  
+        left: calc(15% + 20px);
+    }
+    .header-logo{   
+        margin: 15px 0 0 0;
+    }
+    .header-contact{    
+        width: 100%;
+        padding-top: 15px;
+        text-align: center;
+    }
+    .fly-sushi{ 
+        display: none;
+    }
+    .palochki{  
+        display: none;
+    }
+}
+@media screen and (max-width: 613px){   
+    .main-products-box{ 
+        width: 100%;
+    }
+    .main-products-box-button{  
+        left: calc(50% - 100px);
+    }
+}
