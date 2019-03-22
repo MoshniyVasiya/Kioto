@@ -396,7 +396,7 @@ address{
 @media screen and (max-width: 1180px){   
     
     .header-menu{   
-        font-size: 14px;
+        margin: 0 18px;
     }
     .header-social a:first-child{  
         padding-right: 10px;
@@ -413,21 +413,17 @@ address{
     }    
 }
 @media screen and (max-width: 1130px){   
-    .header-menu{   
-        font-size: 13px; 
-        margin: 0 25px;       
-    }   
     .header-menu ul li{   
         padding: 0 10px 0 18px;
     }
     
 }
-@media screen and (max-width: 1030px){   
+@media screen and (max-width: 1050px){   
     .header-menu{   
         margin: 0;      
     }
     .header-menu ul li{   
-        padding: 0 10px 0 18px;
+        padding: 0 10px 0 10px;
     }
     .header-social{ 
         margin: 0 5px 0 0;        
@@ -458,6 +454,7 @@ address{
     .main-news{ 
         padding-bottom: 0;
     }
+    
 }
 
 
@@ -465,7 +462,9 @@ address{
     .header-menu ul li{   
         padding: 0 5px 0 0;
     }
-    
+    .header-logo{   
+        width: 20%;
+    }
 }
 @media screen and (max-width: 810px){   
     .main-news{ 
@@ -482,10 +481,15 @@ address{
     }
     .header-logo{   
         margin: 15px 0 0 0;
+        width: 20%;
+    }
+    .header-menu{   
+        width: 55%;
+        font-size: 15px;
     }
     .header-contact{    
         width: 100%;
-        padding-top: 15px;
+        padding-top: 20px;
         text-align: center;
     }
     .fly-sushi{ 
@@ -495,11 +499,71 @@ address{
         display: none;
     }
 }
-@media screen and (max-width: 613px){   
+@media screen and (max-width: 640px){   
     .main-products-box{ 
         width: 100%;
     }
     .main-products-box-button{  
         left: calc(50% - 100px);
+    }
+    .header-logo{   
+        width: 50%;
+        float: none;
+        margin-left: calc(50% - 100px);
+    }
+    .header-social{ 
+        width: 50%;
+        max-width: 130px;
+        float: none;
+        margin-left: calc(50% - 65px);
+    }
+    .header-menu{   
+        float: none;
+        width: 100%;
+        
+    }
+    .header-menu ul li{   
+        padding: 0 18px 0 18px;
+        font-size: 16px;
+    }
+    .slide{ 
+        display: none;
+    }
+    .footer-logo{   
+        float: none;
+        width: 50%;
+        margin-left: calc(50% - 100px);
+        
+        
+    }
+    .footer-info{   
+        float: none;
+        width: 100%;
+        padding-top: 15px;
+    }
+    .footer-phone{  
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 490px){   
+    .header-menu ul li{    
+        display: list-item;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+    .header-menu{   
+        padding-top: 20px; 
+    }
+    
+}
+@media screen and (max-width: 400px){   
+    .footer-logo{   
+        margin-left: calc(25% + 5px)); 
+    }
+    .header-logo{   
+        margin-left: calc(25% + 5px);
     }
 }
