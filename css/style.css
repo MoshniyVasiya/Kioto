@@ -221,10 +221,13 @@ main .container{
     vertical-align: middle;
     display: table-cell;
 }
-.main-products-list:nth-child(1), .main-products-list:nth-child(2), .main-products-list:nth-child(3), .main-products-list:nth-child(4), .main-products-list:nth-child(5){   
+.main-products-list article:nth-child(1), .main-products-list article:nth-child(2), .main-products-list article:nth-child(3), .main-products-list article:nth-child(4), .main-products-list article:nth-child(5){   
     border-top: 1px solid #323232;
 }
-.main-products-list:nth-child(5n){   
+.main-products-list article:nth-child(5n){   
+    border-right: 1px solid #323232;
+}
+.main-products-list article:last-child{   
     border-right: 1px solid #323232;
 }
 .main-products-box-image{ 
@@ -426,7 +429,18 @@ address{
         width: 25%;
         max-width: none;
     }    
-    .main-products-list:nth-child(5)
+    .main-products-list article:nth-child(4n){  
+        border-right: 1px solid #323232;
+    }
+    .main-products-list article:nth-child(5n){  
+        border-right: 0;
+    }
+    .main-products-list article:nth-child(5n){  
+        border-top: 0;
+    }
+    .main-products-list article:last-child{   
+        border-right: 1px solid #323232;
+    }
     .main-products-list{    
         margin: 0 15px;
     }
@@ -458,7 +472,15 @@ address{
     .main-products-box{ 
         width: 33%;
     }
-    
+    .main-products-list article:nth-child(3n){  
+        border-right: 1px solid #323232;
+    }
+    .main-products-list article:nth-child(4n){  
+        border-right: 0;
+    }
+    .main-products-list article:nth-child(4){  
+        border-top: 0;
+    }
     .main-news-list li:first-child{ 
         width: 100%;
         float: none;
@@ -500,6 +522,16 @@ address{
     .main-products-box{ 
         width: 50%;
     }
+    .main-products-list article:nth-child(3n){  
+        border-right: 0;
+    }
+    .main-products-list article:nth-child(2n){  
+        border-right: 1px solid #323232;
+    }
+    
+    .main-products-list article:nth-child(3){  
+        border-right: 0;
+    }
     .header-logo{   
         margin: 15px 0 0 0;
         width: 20%;
@@ -523,7 +555,22 @@ address{
 @media screen and (max-width: 640px){   
     .main-products-box{ 
         width: 100%;
-        
+        border-right: 1px solid #323232;
+    }
+    .main-products-list article:nth-child(2n){  
+        border-top: 0;
+    }
+    .main-products-list article:nth-child(3){  
+        border-top: 0;
+    }
+    .main-products-list article:nth-child(3){  
+        border-right: 1px solid #323232;
+    }
+    .main-products-list article:nth-child(5){  
+        border-right: 1px solid #323232;
+    }
+    .main-products-list article:nth-child(9){  
+        border-right: 1px solid #323232;
     }
     .header-logo{   
         width: 50%;
