@@ -207,6 +207,7 @@ main .container{
 .main-products-list{    
     height: 750px;
     background: #0f0f0f;
+    margin: 0 15px;
 }
 .main-products-box{ 
     position: relative;
@@ -223,7 +224,7 @@ main .container{
 .main-products-list:nth-child(1), .main-products-list:nth-child(2), .main-products-list:nth-child(3), .main-products-list:nth-child(4), .main-products-list:nth-child(5){   
     border-top: 1px solid #323232;
 }
-.main-products-list:nth-child(5), .main-products-list:nth-child(10){   
+.main-products-list:nth-child(5n){   
     border-right: 1px solid #323232;
 }
 .main-products-box-image{ 
@@ -373,9 +374,8 @@ address{
     font-weight: 600;
     margin-top: 15px;
 }
-{ 
-    margin-top: 18px;
-}
+
+
 .main-news-date {   
     margin: 12px 0 12px 0; 
     font-size:  13px;
@@ -575,7 +575,7 @@ address{
     .header-menu{   
         padding-top: 20px; 
     }
-   
+}
 @media screen and (max-width: 400px){   
     .footer-logo{   
         margin-left: calc(25% + 5px); 
@@ -583,5 +583,4 @@ address{
     .header-logo{   
         margin-left: calc(25% + 5px);
     }
-    
 }
