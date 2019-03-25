@@ -331,16 +331,13 @@ address{
 
 /* NEWS */
 
-.main-news a{  
-    display: block;
-}
 
 .main-news{ 
     margin-top: 110px;
     padding-bottom: 250px;
 }
 .main-news ul{  
-    margin-left: 20px;
+    display: block;
 }
 
 .main-news-title{   
@@ -353,25 +350,40 @@ address{
     text-align: left;
     height: auto;
 }
-
-.main-news-list li:first-child{ 
-    width: 50%;
+.main-news-list li:nth-child(2) .main-news-image{   
     float: left;
+}
+.main-news-list li:last-child .main-news-image{   
+    float: left;
+}
+.main-news-list li:first-child .main-news-button{   
+    margin-left: unset;
+}
+.main-news-list li:first-child{ 
+    width: 49%;
+    float: left;
+    height: 500px;
+    display: inline-block;
 }
 .main-news-list li:nth-child(2){ 
-    width: 50%;
+    width: 49%;
     float: left;
-    
+    height: 235px;
+    display: inline-block;
 }
 .main-news-list li:last-child{  
-    width: 50%;
+    width: 49%;
     float: left;
+    height: 235px;
     margin-top: 20px;
+    display: block;
 }
 .main-news-image{   
     margin-right: 21px;
 }
-
+.main-news-list li:first-child .main-news-subtitle{   
+    margin-top: 15px;
+}
 .main-news-subtitle{    
     font-size: 18px;
     font-weight: 600;
@@ -394,6 +406,9 @@ address{
 }
 
 .main-news-button{  
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
     font-weight: 400;
     font-size: 13px;
     text-align: center;
@@ -404,8 +419,6 @@ address{
     width: 150px;
     z-index: 10;
     line-height: 43px;
-    margin-top: 10px;
-
 }
 
 
@@ -484,7 +497,7 @@ address{
     .main-news-list li:first-child{ 
         width: 100%;
         float: none;
-        
+        height: auto;
     }
     .main-news-list li .main-news-image img:first-child{ 
         width: 100%;
@@ -493,12 +506,14 @@ address{
     .main-news-list li:nth-child(2n){ 
         width: 100%;
         float: left;
+        height: auto;
         margin-top: 25px;
         margin-bottom: 25px;
     }
     .main-news-list li:last-child{  
         width: 100%;
         float: none;
+        height: auto;
     }
     .main-news{ 
         padding-bottom: 15px;
@@ -551,7 +566,21 @@ address{
     .palochki{  
         display: none;
     }
+    .main-news{ 
+        max-width: 80%;
+    }
 }
+@media (max-width: 670px){  
+    .main-news-list li:nth-child(2) .main-news-image{   
+        float: none;
+       
+    }
+    .main-news-list li:nth-child(3) .main-news-image{   
+        float: none;
+        
+    }
+}
+
 @media screen and (max-width: 640px){   
     .main-products-box{ 
         width: 100%;
